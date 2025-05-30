@@ -17,7 +17,7 @@ func main() {
 
 	routes := handler.InitRoutes(ctrl)
 
-	server := http.NewServer("8008", routes)
+	server := http.NewServer("8080", routes)
 	if err := server.Start(); err != nil {
 		log.Fatal(err)
 	}
